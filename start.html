@@ -1,0 +1,57 @@
+
+<html>
+
+<head>
+    <title>Cadastro de Viajantes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funcoes.js"></script>
+</head>
+
+<body onload="carregarTotalViajantes('totalViajantes')">
+ 
+
+	<img src="img/mala.png" width="100">
+	<p>Relatorio de Viajantes: <span id="totalViajantes">0</span></p>
+</div>
+    
+
+<form>
+<table>
+	<caption>Cadastro de novos viajantes</caption>
+         
+<tr>
+	<td class="alinharRotulos">Nome viajante:</td>
+	<td><input id="txtNomeViajante" type="text" size="30"></td>
+</tr>
+          
+<tr>
+	<td class="alinharRotulos">Valor para viagem:</td>
+	<td><input id="txtCodViajante" type="text"></td>
+</tr>
+            
+<tr>
+	<td class="alinharRotulos">Acompanhantes:</td>
+	<td>
+	<select id="qtidadeViajante">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>           
+		</select>
+	</td>
+</tr>
+          
+ <tr>
+	<td colspan="2" align="center">
+	<input type="button" value="Cadastrar" class="alinhaBtns" onclick="validarViajante('txtNomeViajante','txtCodViajante','qtidadeViajante')">
+	<input type="button" value="Ver controle" class="alinhaBtns" onclick="window.open('verViajante.html','_self')">
+	<input type="reset" value="Limpar" class="alinhaBtns">
+	</td>
+</tr>
+</table>
+</form>
+</body>
+
+</html>
